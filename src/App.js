@@ -1,17 +1,18 @@
-import React from 'react';
-import dragonite from './dragonite.gif'
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import NavTabs from "./components/NavTabs";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={dragonite} className="App-logo" alt="logo" />
-        <p>
-          Alex is building his own e-Portfolio. Stay tuned!
-        </p>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <NavTabs />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+      </div>
+    </Router>
   );
 }
 
