@@ -4,6 +4,7 @@ import githubicon from '../../githubicon.png';
 import linkedinicon from '../../linkedinicon.png';
 import portfolioicon from '../../portfolioicon.png';
 import resumeicon from '../../resumeicon.png';
+import MyResume from './myresume.pdf';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -37,7 +38,7 @@ function Home() {
     </Col>
     </Row>
     <Row>
-    <Col className="myphoto"> <a href='../../myresume.pdf'><img src={resumeicon} alt='resumeicon' /> </a>
+    <Col className="myphoto"> <a href={MyResume}><img src={resumeicon} alt='resumeicon' /> </a>
     <h4> My Resume </h4>
     
     </Col>
