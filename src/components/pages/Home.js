@@ -15,40 +15,33 @@ import '../../app.css'
 function Home() {
   return (
     <div>
-    <Container fluid="sm">
+      <Container fluid="md">
 
-  <Row>
-    <Col />
-    <Col className="myphoto"><img src={dragonite} alt='dragonite' />
-    <h1> Alex Korjeski </h1>
-    
-    </Col>
-    <Col/>
-  </Row>
-  
-  <Row>
+        <Row>
+          <Col />
+          <Col className="myphoto"><img src={dragonite} alt='dragonite' />
+            <h1> Alex Korjeski </h1>
+          </Col>
+          <Col />
+        </Row>
 
-<Col className="myphoto"> <a href='https://github.com/akorjeski'><img src={githubicon} alt='githubicon' /> </a>
-    <h4> Github </h4>
-    
-    </Col>
-    <Col className="myphoto"> <a href='https://www.linkedin.com/in/alexander--korjeski/'><img src={linkedinicon} alt='linkedinicon' /></a>
-    <h4> LinkedIn </h4>
-    
-    </Col>
-    </Row>
-    <Row>
-    <Col className="myphoto"> <a href={MyResume}><img src={resumeicon} alt='resumeicon' /> </a>
-    <h4> My Resume </h4>
-    
-    </Col>
-    <Col className="myphoto"><img src={portfolioicon} alt='portfolioicon' />
-    <h4> My Portfolio </h4>
-    
-    </Col>
 
-  </Row>
-</Container>
+        <Row>
+          <Col />
+          <Col className="myphoto">
+            <a href='https://github.com/akorjeski'><img src={githubicon} alt='githubicon' /> </a>
+            <h4> Github </h4>
+            <a href='https://www.linkedin.com/in/alexander--korjeski/'><img src={linkedinicon} alt='linkedinicon' /></a>
+            <h4> LinkedIn </h4>
+            <a href={MyResume}><img src={resumeicon} alt='resumeicon' /> </a>
+            <h4> My Resume </h4>
+            <img src={portfolioicon} alt='portfolioicon' />
+            <h4> My Portfolio </h4>
+          </Col>
+
+          <Col />
+        </Row>
+      </Container>
     </div>
 
   );
